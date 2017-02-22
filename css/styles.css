@@ -81,10 +81,23 @@ header {
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-nav.nav-justified > li{
       float:none;
   }
+
+  .navbar-inverse {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  .navbar-inverse.affix {
+    padding: 0;
+    /* Add additional styles here for the COLLAPSED state */
+  }
+
 }
 
 .navbar-nav {
