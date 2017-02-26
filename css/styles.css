@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 /* bootstrap 3 helpers */
 .masthead{
   background-color: powderblue;
