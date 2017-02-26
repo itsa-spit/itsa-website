@@ -27,7 +27,7 @@ header {
   padding-bottom:20px;
 }
 
-.scroll-top {
+.scroll-top{
    position:fixed;
    bottom:0;
    right:6%;
@@ -39,4 +39,8 @@ header {
 }
 .scroll-top a:link,.scroll-top a:visited {
   color:#222;
+}
+
+.scroll-top a:focus{
+  outline: none;
 }
