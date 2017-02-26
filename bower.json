@@ -1,10 +1,11 @@
 {
   "name": "itsa-website",
   "authors": [
-    "ashniu123 <nisheet1.sinvhal@gmail.com>"
+    "ashniu123 <nisheet1.sinvhal@gmail.com>",
+    "ashnehete <ashnehete@gmail.com>"
   ],
   "description": "ITSA webiste",
-  "main": "home.html",
+  "main": "index.html",
   "keywords": [
     "website",
     "college",
