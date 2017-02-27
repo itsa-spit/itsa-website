@@ -22,3 +22,6 @@ $('#nav .navbar-nav li>a').click(function () {
     var posi = $(link).offset().top;
     $('body,html').animate({scrollTop: posi}, 700);
 });
+
+//Set year in footer automatically
+$('#currentYear').html(new Date().getFullYear());
