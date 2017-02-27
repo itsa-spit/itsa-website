@@ -14,5 +14,6 @@ Adjusted collapse to appear on md screen size(1001px for a specific reason)
 <h2>Issues</h2>
 <ul>
   <li>sidebar comes for a split second on top of collapse on small screen size
+  <li>Header blocked when navbar affix comes into action
 </ul>
 </div>
