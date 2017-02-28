@@ -6,9 +6,19 @@ $('#nav').affix({
 
 $('#sidebar').affix({
     offset: {
-        top: 260
+        top: $('header').height()
     }
 });
+
+/*To prevent overlapping of header texts*/
+$('#nav').on('affix.bs.affix',function() {
+    $('#main-content').css('margin-top',$('#nav').height());
+});
+
+$('#nav').on('affixed-top.bs.affix',function() {
+    $('#main-content').css('margin-top',0);
+});
+
 
 /* smooth scrolling for scroll to top */
 $('.scroll-top').click(function () {
