@@ -12,6 +12,25 @@
     <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .year {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px;
+            font-size: 1.5em;
+        }
+
+        .year > a {
+            color: #46949a;
+        }
+
+        .year > a:hover, .year > a:focus, .year > a:active {
+            color: #3a7a7f;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -65,285 +84,91 @@
     </nav>
     <!-- Begin Body -->
     <div class="container">
-        <div class="row">
-            <div class="col-sm-2 hidden-xs">
-                <ul id="sidebar" class="nav nav-pills nav-stacked">
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Side</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-10" id="main-content">
-
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="committee2016">
-                            <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCommittee2016" aria-expanded="true" aria-controls="collapseOne">
-                                2016
+        <div class="year">
+            <a role="button" data-toggle="collapse" href="#com16" aria-expanded="false" aria-controls="com16">2016-2017</a>
+        </div>
+        <div class="collapse in" id="com16">
+            <div class="panel panel-default">
+            <div id="collapseCommittee2016" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="committee2016">
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
                             </a>
-                          </h4>
                         </div>
-                        <div id="collapseCommittee2016" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="committee2016">
-                            <div class="panel-body">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Chairman</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Vice-Chairman</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div align="right">
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Finance Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Tech Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div align="right">
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Cultural Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Chairman</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div>
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="committee2015">
-                            <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCommittee2015" aria-expanded="false" aria-controls="collapseTwo">
-                                2015
-                            </a>
-                          </h4>
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">Vice-Chairman</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div align="right">
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
+                            </div>
                         </div>
-                        <div id="collapseCommittee2015" class="panel-collapse collapse" role="tabpanel" aria-labelledby="committee2015">
-                            <div class="panel-body">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2015/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Chairman</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Vice-Chairman</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div align="right">
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2015/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2015/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Finance Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Tech Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div align="right">
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2015/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2015/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Cultural Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="media-right">
+                            <a href="#">
+                                <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Finance Head</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div>
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="committee2014">
-                            <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCommittee2014" aria-expanded="false" aria-controls="collapseThree">
-                                2014
-                            </a>
-                          </h4>
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">Tech Head</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div align="right">
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
+                            </div>
                         </div>
-                        <div id="collapseCommittee2014" class="panel-collapse collapse" role="tabpanel" aria-labelledby="committee2014">
-                            <div class="panel-body">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2014/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Chairman</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Vice-Chairman</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div align="right">
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2014/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2014/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Finance Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Tech Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div align="right">
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2014/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="img/2014/" alt="..." style="width:150px;height:150px;">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Cultural Head</h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <div>
-                                            <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
-                                            <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="media-right">
+                            <a href="#">
+                                <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/2016/" alt="..." style="width:150px;height:150px;">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Cultural Head</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div>
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
         </div>
     </div>
     <!--./container-->
