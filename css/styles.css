@@ -1,4 +1,5 @@
 body {
+    /*margin-top: 50px;*/
     font-family: 'Lora', serif;
 }
 
@@ -13,7 +14,36 @@ header {
     height: 280px;
 }
 
-.navbar-default .navbar-toggle {
+/*Test colours, change it*/
+
+.navbar{
+    background-color: transparent;
+    transition: background-color 1s ease;
+    border: none;
+}
+
+.navbar:hover{
+    background-color: black;
+    transition: background-color 1s ease;
+    border: none;
+}
+
+.darkNav{
+    background-color:black;
+    transition: background-color 1s ease;
+}
+
+.navbar-default .navbar-nav>li>a {
+    opacity: 1;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus {
+    opacity: 1;
+    color: #ff3;
+}
+
+/*.navbar-default .navbar-toggle {
     border-color: #46949a;
 }
 
@@ -38,14 +68,7 @@ header {
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     color: #3a7a7f;
     background-color: #c7eaec;
-}
-
-#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
+}*/
 
 #sidebar.affix-top {
     position: static;
@@ -140,5 +163,9 @@ header {
 
     .collapse.in {
         display: block !important;
+    }
+
+    #ITSA_Logo{
+        display: none;
     }
 }

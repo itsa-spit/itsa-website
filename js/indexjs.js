@@ -1,6 +1,9 @@
-$('#nav').affix({
-    offset: {
-        top: $('header').height()
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+        $("#nav").addClass("darkNav");
+    } else {
+        $("#nav").removeClass("darkNav");
     }
 });
 
