@@ -4,8 +4,7 @@ body {
 }
 
 .masthead {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../img/bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg.jpg");
     background-size: cover;
     color: white;
 }
@@ -14,22 +13,23 @@ header {
     height: 280px;
 }
 
+
 /*Test colours, change it*/
 
-.navbar{
+.navbar {
     background-color: transparent;
     transition: background-color 1s ease;
     border: none;
 }
 
-.navbar:hover{
+.navbar:hover {
     background-color: black;
     transition: background-color 1s ease;
     border: none;
 }
 
-.darkNav{
-    background-color:black;
+.darkNav {
+    background-color: black;
     transition: background-color 1s ease;
 }
 
@@ -38,10 +38,37 @@ header {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     opacity: 1;
     color: #ff3;
 }
+
+.leftNavbar {
+    padding-right: 40px;
+    transition: padding-right 0.5s linear;
+}
+
+.rightNavbar {
+    padding-left: 40px;
+    transition: padding-left 0.5s linear;
+}
+
+.itsa-logo{
+    background-image: url('../img/itsa-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-left: -2%;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    z-index: 100000;
+    transition: background-image 2s linear,background-size 2s linear,background-repeat 2s linear;
+    /*Not getting this transition property right*/
+}
+
+
 
 /*.navbar-default .navbar-toggle {
     border-color: #46949a;
@@ -98,8 +125,7 @@ header {
     border-top-right-radius: 3px;
 }
 
-.scroll-top a:link,
-.scroll-top a:visited {
+.scroll-top a:link, .scroll-top a:visited {
     color: #222;
 }
 
@@ -113,7 +139,6 @@ header {
         float: none;
         vertical-align: top;
     }
-
     .navbar .navbar-collapse {
         text-align: center;
     }
@@ -123,49 +148,38 @@ header {
     .navbar-header {
         float: none;
     }
-
-    .navbar-left,
-    .navbar-right {
+    .navbar-left, .navbar-right {
         float: none !important;
     }
-
     .navbar-toggle {
         display: block;
     }
-
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
-
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
-
     .navbar-collapse.collapse {
         display: none !important;
     }
-
     .navbar-nav {
         float: none !important;
         margin-top: 7.5px;
     }
-
-    .navbar-nav > li {
+    .navbar-nav>li {
         float: none;
     }
-
-    .navbar-nav > li > a {
+    .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
     .collapse.in {
         display: block !important;
     }
-
-    #ITSA_Logo{
+    #ITSA_Logo {
         display: none;
     }
 }
