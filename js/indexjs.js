@@ -20,6 +20,10 @@ $('#sidebar').affix({
     }
 });
 
+$('#sidebar').bind('cssClassChanged',function() {
+    ('#sidebar').affix('checkPosition');
+});
+
 /*To prevent overlapping of header texts*/
 $('#nav').on('affix.bs.affix',function() {
     $('#main-content').css('margin-top',$('#nav').height());

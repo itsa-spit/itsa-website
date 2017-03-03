@@ -91,20 +91,6 @@ header {
 
 }
 
-#sidebar.affix-top {
-    position: static;
-}
-
-#sidebar.affix-bottom {
-    position: absolute;
-}
-
-#sidebar.affix {
-    position: fixed;
-    top: 80px;
-    width: 13%;/*weird but still*/
-}
-
 footer {
     height: 60px;
     background-color: #f5f5f5;
@@ -139,6 +125,21 @@ footer {
     .navbar .navbar-collapse {
         text-align: center;
     }
+
+    #sidebar.affix-top {
+        position: static;
+    }
+
+    #sidebar.affix-bottom {
+        position: absolute;
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top: 80px;
+        width: 13%;/*weird but still*/
+    }
+
 }
 
 @media (max-width: 1001px) {
