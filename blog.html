@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Good for the faculty part -->
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -11,10 +10,34 @@
         <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <style>
+            #title > h1 {
+                font-size: 3em;
+            }
+            #title > h1::before {
+                content: "-------- ";
+                letter-spacing: -7px;
+            }
+
+            #title > h1::after {
+                content: "-------- ";
+                letter-spacing: -7px;
+            }
+            #title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
         <!-- Wrap all page content here -->
         <header class="masthead">
+            <!--Img to the background of this tag-->
+            <div id="title">
+                <h1>&nbsp;Blog&nbsp;</h1>
+            </div>
         </header>
         <!-- Begin Navbar -->
         <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -49,6 +72,7 @@
         </nav>
         <a href="index.html"><div id="ITSA"></div></a>
         <!-- Begin Body -->
+<<<<<<< HEAD
         <div class="container" id="content">
             <div class="row">
                 <div class="col-sm-2 hidden-xs">
@@ -63,6 +87,10 @@
                     <p style="height:90vh;font-size:5em;">Content Here</p>
                 </div>
             </div>
+=======
+        <div class="container">
+
+>>>>>>> bc88d6926f19de6c55ccca582c8ed89ddbffd632
         </div>
         <div id="footer">
             <div class="container">
@@ -75,5 +103,6 @@
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/indexjs.js"></script>
+        <script src="js/blog.js"></script>
     </body>
 </html>
