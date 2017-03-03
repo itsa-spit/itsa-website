@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Good for the faculty part -->
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -11,10 +10,32 @@
         <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <style>
+            .masthead {
+                height: 100vh;
+            }
+            #title {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+                color: white;
+                font-size: 3em;
+            }
+            #content {
+                margin-top: 30px;
+                font-size: 16px;
+            }
+        </style>
     </head>
     <body>
         <!-- Wrap all page content here -->
         <header class="masthead">
+        <div id="title">
+            <span class="text-center">Information Technology Student Association</span>
+        </div>
         </header>
         <!-- Begin Navbar -->
         <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -51,16 +72,18 @@
         <!-- Begin Body -->
         <div class="container" id="content">
             <div class="row">
-                <div class="col-sm-2 hidden-xs">
-                    <ul id="sidebar" class="nav nav-pills nav-stacked">
-                        <li><a href="#">Side</a></li>
-                        <li><a href="#">Side</a></li>
-                        <li><a href="#">Side</a></li>
-                        <li><a href="#">Side</a></li>
-                    </ul>
+                <div class="col-md-8">
+                    <p class="text-justify">
+                        The Information Technology Students Association first came into being in 2004 as a group of students
+            coming together to represent the interest of the IT department and enrich their 4 years in
+            engineering. The association has evolved over the years with numerous ideas being incorporated
+            every year, setting milestones for the following batches to come. Now in 2013 a group of 10
+            individuals with common interest for their department, has taken up the responsibilities of making
+            a difference to the department that has become a part of their lives.
+                    </p>
                 </div>
-                <div class="col-sm-10" id="main-content">
-                    <p style="height:90vh;font-size:5em;">Content Here</p>
+                <div class="col-md-4">
+                    <img src="img/itsa_logo.png" width="100%">
                 </div>
             </div>
         </div>

@@ -1,10 +1,9 @@
 body {
-    /*margin-top: 50px;*/
     font-family: 'Lora', serif;
 }
 
 .masthead {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/laptop.jpg");
     background-size: cover;
     color: white;
 }
@@ -12,9 +11,6 @@ body {
 header {
     height: 280px;
 }
-
-
-/*Test colours, change it*/
 
 .navbar {
     background-color: transparent;
@@ -29,7 +25,7 @@ header {
 }
 
 .darkNav {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.5);
     transition: background-color 1s ease;
 }
 
@@ -134,8 +130,6 @@ footer {
     height: 60px;
     background-color: #f5f5f5;
     margin-top: 50px;
-    /*padding-top: 20px;*/
-    /*padding-bottom: 20px;*/
 }
 
 .scroll-top {
