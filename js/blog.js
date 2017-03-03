@@ -4,6 +4,9 @@ $.ajax({
     success: function (data) {
         getPostCard(data[0], 0);
     },
+    error: function (a,b,c) {
+        console.log(a,b,c);
+    },
     dataType: 'json'
 });
 
