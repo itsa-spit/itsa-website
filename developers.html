@@ -10,11 +10,42 @@
         <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <style type="text/css">
+            .imgbox
+            {
+                margin:auto;
+                width:910px;
+                height:1000px;
+                margin-top: 20px;
+            }
+            .imgbox1
+            {
+                margin:auto;
+                width:910px;
+                height:700px;
+                margin-top: 20px;
+            }
+            .fstyle
+            {
+
+                color: black;
+                text-align: center;
+                font-size: 24px;
+            }
+            img:hover
+            {
+                border:solid black;
+            }
+        </style>
     </head>
     <body>
         <!-- Wrap all page content here -->
         <!-- Wrap all page content here -->
         <header class="masthead">
+            <!--Img to the background of this tag-->
+            <div id="page-title">
+                <h1>&nbsp;Developers&nbsp;</h1>
+            </div>
         </header>
         <!-- Begin Navbar -->
         <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -53,104 +84,63 @@
             <div class="row">
                 <div class="col-sm-2 hidden-xs">
                     <ul id="sidebar" class="nav nav-pills nav-stacked">
-                        <li><a href="#initiators">Initiators</a></li>
                         <li><a href="#developers">Developers</a></li>
+                        <li><a href="#initiators">Initiators</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-10" id="main-content">
-                    <h1 id="initiators">Initiators</h1>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">Dude1</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                    <h1 id="developers" style="text-align: center;">Developers</h1>
+                    <div class="imgbox1">
+                        <div style="width: 300px; height: 300px;display: inline-block;">
+                            <img src="nisit.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Nisheet Sinvhal<br>
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                         </div>
-                        <div class="media-right">
-                            <a href="#" class="thumbnail">
-                            <img class="media-object" style="width:150px;height:150px" src="img/developers/somePicture.jpg" alt="Initiator">
-                            </a>
+                        <div style="width: 300px; height: 300px;display: inline-block;float: right;">
+                            <img src="ashish.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Ashish Nehete<br>
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                         </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">Dude2</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                        <br>
+                        <div style="width: 300px; height: 300px;display: inline-block;">
+                            <img src="simran.png" style="height: 220px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Simran Mhatre<br>
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                         </div>
-                        <div class="media-right">
-                            <a href="#" class="thumbnail">
-                            <img class="media-object" style="width:150px;height:150px" src="img/developers/somePicture.jpg" alt="Initiator">
-                            </a>
+                        <div style="width: 300px; height: 300px;display: inline-block;float: right;">
+                            <img src="kevin.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Kevin Sijo<br>
+                                <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
+                                <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                         </div>
                     </div>
-                    <h1 id="developers">Developers</h1>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">Dev1</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                    <h1 id="initiators" style="text-align: center;">Initiators</h1>
+                    <div class="imgbox">
+                        <div style="width: 300px; height: 300px;margin:auto;">
+                            <img src="prem.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Prem Raheja<br>Chairperson,ITSA 2017</p>
                         </div>
-                        <div class="media-right">
-                            <a href="#" class="thumbnail">
-                            <img class="media-object" style="width:150px;height:150px" src="img/developers/somePicture.jpg" alt="Developer">
-                            </a>
+                        <div style="width: 300px; height: 300px;display: inline-block;">
+                            <img src="Aisha.png" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Ayesha Kazi<br>Admin,ITSA 2017</p>
                         </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">Dev2</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                        <div style="width: 300px; height: 300px;display: inline-block;float: right;">
+                            <img src="Abhishek.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Abhishek Naik<br>Finance Head,ITSA 2017</p>
                         </div>
-                        <div class="media-right">
-                            <a href="#" class="thumbnail">
-                            <img class="media-object" style="width:150px;height:150px" src="img/developers/somePicture.jpg" alt="Developer">
-                            </a>
+                        <br>
+                        <div style="width: 300px; height: 300px;display: inline-block;">
+                            <img src="jaspreet.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Jaspreet KAUR<br>Technical Head,ITSA 2017</p>
+                        </div>
+                        <div style="width: 300px; height: 300px;display: inline-block;float: right;">
+                            <img src="neeti.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                            <p class="fstyle">Neeti<br>Creative Head,ITSA 2017</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">Dev3</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="media-right">
-                            <a href="#" class="thumbnail">
-                            <img class="media-object" style="width:150px;height:150px" src="img/developers/somePicture.jpg" alt="Developer">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">Dev4</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="media-right">
-                            <a href="#" class="thumbnail">
-                            <img class="media-object" style="width:150px;height:150px" src="img/developers/somePicture.jpg" alt="Developer">
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>

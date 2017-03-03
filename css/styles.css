@@ -25,16 +25,16 @@ header {
 }
 
 .darkNav {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 1s ease;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     opacity: 1;
     color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     opacity: 1;
     color: #ff3;
 }
@@ -49,7 +49,7 @@ header {
     transition: padding-left 0.5s linear;
 }
 
-.itsa-logo{
+.itsa-logo {
     background-image: url('../img/itsa-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -60,35 +60,71 @@ header {
     top: 15px;
     left: 50%;
     z-index: 100000;
-    animation:fadeIn 1s;
-    -moz-animation:fadeIn 1s; /* Firefox */
-    -webkit-animation:fadeIn 1s; /* Safari and Chrome */
-    -o-animation:fadeIn 1s; /* Opera */
+    animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s; /* Firefox */
+    -webkit-animation: fadeIn 1s; /* Safari and Chrome */
+    -o-animation: fadeIn 1s; /* Opera */
 }
 
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-moz-keyframes fadeIn { /* Firefox */
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeIn { /* Safari and Chrome */
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-o-keyframes fadeIn { /* Opera */
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#content{
+#content {
     margin-top: 25px;
+}
 
+#page-title > h1 {
+    font-size: 3em;
+}
+
+#page-title > h1::before {
+    content: "-------- ";
+    letter-spacing: -7px;
+}
+
+#page-title > h1::after {
+    content: "-------- ";
+    letter-spacing: -7px;
+}
+
+#page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 footer {
@@ -122,6 +158,7 @@ footer {
         float: none;
         vertical-align: top;
     }
+
     .navbar .navbar-collapse {
         text-align: center;
     }
@@ -146,37 +183,47 @@ footer {
     .navbar-header {
         float: none;
     }
+
     .navbar-left, .navbar-right {
         float: none !important;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
+
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
+
     .navbar-collapse.collapse {
         display: none !important;
     }
+
     .navbar-nav {
         float: none !important;
         margin-top: 7.5px;
     }
-    .navbar-nav>li {
+
+    .navbar-nav > li {
         float: none;
     }
-    .navbar-nav>li>a {
+
+    .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     .collapse.in {
         display: block !important;
     }
+
     #ITSA_Logo {
         display: none;
     }
