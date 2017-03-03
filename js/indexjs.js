@@ -15,7 +15,7 @@ $(window).scroll(function() {
 
 $('#sidebar').affix({
     offset: {
-        top: $('header').height()
+        top: $('header').height()-$('nav').height()
     }
 });
 
