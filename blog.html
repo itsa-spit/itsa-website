@@ -11,23 +11,33 @@
         <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <style>
+            #title > h1 {
+                font-size: 3em;
+            }
+            #title > h1::before {
+                content: "-------- ";
+                letter-spacing: -7px;
+            }
+
+            #title > h1::after {
+                content: "-------- ";
+                letter-spacing: -7px;
+            }
+            #title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
         <!-- Wrap all page content here -->
         <header class="masthead">
             <!--Img to the background of this tag-->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img class="img-circle" style="height:150px;width:150px" src="img/itsa_logo.jpg" alt="ITSA">
-                    </div>
-                    <div class="col-xs-3 col-xs-offset-6">
-                        <img class="pull-right img-circle" style="height:150px;width:150px" src="img/spit_logo.jpg" alt="SPIT">
-                    </div>
-                </div>
-                <div id="title" align="center">
-                    <h1>Blog</h1>
-                </div>
+            <div id="title">
+                <h1>&nbsp;Blog&nbsp;</h1>
             </div>
         </header>
         <!-- Begin Navbar -->
@@ -64,19 +74,7 @@
         </nav>
         <!-- Begin Body -->
         <div class="container">
-            <div class="row">
-                <div class="col-sm-2 hidden-xs">
-                    <ul id="sidebar" class="nav nav-pills nav-stacked">
-                        <li><a href="#">Side</a></li>
-                        <li><a href="#">Side</a></li>
-                        <li><a href="#">Side</a></li>
-                        <li><a href="#">Side</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-10" id="main-content">
-                    <p style="height:90vh;font-size:5em;">Content Here</p>
-                </div>
-            </div>
+
         </div>
         <div id="footer">
             <div class="container">
@@ -89,5 +87,6 @@
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/indexjs.js"></script>
+        <script src="js/blog.js"></script>
     </body>
 </html>
