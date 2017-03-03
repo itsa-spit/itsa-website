@@ -29,7 +29,7 @@ header {
 }
 
 .darkNav {
-    background-color: black;
+    background-color: rgba(0,0,0,0.75);
     transition: background-color 1s ease;
 }
 
@@ -64,8 +64,30 @@ header {
     top: 15px;
     left: 50%;
     z-index: 100000;
-    transition: background-image 2s linear,background-size 2s linear,background-repeat 2s linear;
-    /*Not getting this transition property right*/
+    animation:fadeIn 1s;
+    -moz-animation:fadeIn 1s; /* Firefox */
+    -webkit-animation:fadeIn 1s; /* Safari and Chrome */
+    -o-animation:fadeIn 1s; /* Opera */
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn { /* Firefox */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn { /* Safari and Chrome */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn { /* Opera */
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 
