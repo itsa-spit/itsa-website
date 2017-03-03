@@ -88,42 +88,21 @@ header {
 
 #content{
     margin-top: 25px;
-}
 
-/*.navbar-default .navbar-toggle {
-    border-color: #46949a;
 }
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #46949a;
-}
-
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #c7eaec;
-}
-
-.navbar-default {
-    background-color: #e4f5f6;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-    color: #3a7a7f;
-    background-color: #b8e5e6;
-}
-
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #3a7a7f;
-    background-color: #c7eaec;
-}*/
 
 #sidebar.affix-top {
     position: static;
 }
 
+#sidebar.affix-bottom {
+    position: absolute;
+}
+
 #sidebar.affix {
     position: fixed;
     top: 80px;
+    width: 13%;/*weird but still*/
 }
 
 footer {

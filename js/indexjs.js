@@ -16,7 +16,7 @@ $(window).scroll(function() {
 $('#sidebar').affix({
     offset: {
         top: $('header').height()-$('nav').height(),
-        bottom:$('footer').height()
+        bottom: $('footer').outerHeight(true)
     }
 });
 
