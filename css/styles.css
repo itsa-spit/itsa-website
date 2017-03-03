@@ -44,12 +44,12 @@ header {
 }
 
 .leftNavbar {
-    padding-right: 40px;
+    padding-right: 50px;
     transition: padding-right 0.5s linear;
 }
 
 .rightNavbar {
-    padding-left: 40px;
+    padding-left: 50px;
     transition: padding-left 0.5s linear;
 }
 
@@ -90,7 +90,9 @@ header {
     100% {opacity:1;}
 }
 
-
+#content{
+    margin-top: 25px;
+}
 
 /*.navbar-default .navbar-toggle {
     border-color: #46949a;
@@ -128,12 +130,12 @@ header {
     top: 80px;
 }
 
-#footer {
+footer {
     height: 60px;
     background-color: #f5f5f5;
     margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
 }
 
 .scroll-top {
