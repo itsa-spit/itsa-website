@@ -217,13 +217,16 @@ footer {
         display: block !important;
     }
 
-    .navbar-default .navbar-nav li{
-        display: inline-block;
-    }
     .nav>li>a{
         padding: 10px;
         margin: 0px auto;
     }
+
+    .navbar-default .navbar-offcanvas{
+        background-color: black;
+        color: white;
+    }
+
 }
 
 @media (max-width:768px) {
