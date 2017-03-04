@@ -110,6 +110,7 @@ header {
 
 #content {
     margin-top: 25px;
+    min-height: 300px;
 }
 
 #page-title>h1 {
