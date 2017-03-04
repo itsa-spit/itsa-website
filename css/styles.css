@@ -218,7 +218,8 @@ footer {
     }
 
     .navbar-default .navbar-nav li{
-        display: inline-block;
+        /*display: inline-block;*/
+        text-align: center;
     }
     .nav>li>a{
         padding: 10px;
