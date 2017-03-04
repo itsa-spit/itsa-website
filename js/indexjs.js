@@ -1,3 +1,4 @@
+/*sidebar affix*/
 $('#sidebar').affix({
     offset: {
         top: $('header').height()-$('nav').height(),
@@ -7,6 +8,17 @@ $('#sidebar').affix({
 
 $('#sidebar').bind('cssClassChanged',function() {
     ('#sidebar').affix('checkPosition');
+});
+
+/*smooth scrolling for any sidebar menu item*/
+$(document).ready(function(){
+    $('#sidebar li').each(function(index){
+        $(this).click(function(){
+            var goTowards=$(this).find('a').attr('href');
+            $(this).blur();
+            $('body,html').animate({scrollTop: $(goTowards).offset().top}, 1000);
+        });
+    });
 });
 
 /* smooth scrolling for scroll to text1 on index.html */
