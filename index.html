@@ -33,43 +33,69 @@
             font-size: 16px;
         }
 
-        #icon1
-        {
+        #icon1 {
             animation-name: ani;
-            -webkit-animation-name:ani;
+            -webkit-animation-name: ani;
             animation-duration: 5s;
-            -webkit-animation-duration:5s;
+            -webkit-animation-duration: 5s;
             animation-iteration-count: infinite;
-            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-iteration-count: infinite;
         }
-        @keyframes ani
-        {
-            0%   {color: white;}
-            25%  {color: #06829B;}
-            50%  {color: white;}
-            75%  {color:#06829B;}
-            100% {color:white;}
+
+        @keyframes ani {
+            0% {
+                color: white;
+            }
+            25% {
+                color: #06829B;
+            }
+            50% {
+                color: white;
+            }
+            75% {
+                color: #06829B;
+            }
+            100% {
+                color: white;
+            }
         }
-        @-webkit-keyframes ani
-        {
-            0%   {color: white;}
-            25%  {color: #06829B;}
-            50%  {color: white;}
-            75%  {color:#06829B;}
-            100% {color:white;}
+
+        @-webkit-keyframes ani {
+            0% {
+                color: white;
+            }
+            25% {
+                color: #06829B;
+            }
+            50% {
+                color: white;
+            }
+            75% {
+                color: #06829B;
+            }
+            100% {
+                color: white;
+            }
         }
-        #div1
-        {
+
+        #div1 {
             height: 200px;
             animation-name: movdiv;
-
         }
-        @keyframes movdiv
-        {
-            0%{top:0;}
-            25%{ top:100px; }
-            50%{top:0;}
-            100%{ top:100px; }
+
+        @keyframes movdiv {
+            0% {
+                top: 0;
+            }
+            25% {
+                top: 100px;
+            }
+            50% {
+                top: 0;
+            }
+            100% {
+                top: 100px;
+            }
         }
     </style>
 </head>
@@ -151,6 +177,22 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/indexjs.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+                $("#nav").addClass("darkNav");
+                $('#navbarLeft').addClass('leftNavbar');
+                $('#navbarRight').addClass('rightNavbar');
+                $('#ITSA').addClass('itsa-logo');
+            } else {
+                $("#nav").removeClass("darkNav");
+                $('#navbarLeft').removeClass('leftNavbar');
+                $('#navbarRight').removeClass('rightNavbar');
+                $('#ITSA').removeClass('itsa-logo');
+            }
+        });
+    </script>
 </body>
 
 </html>
