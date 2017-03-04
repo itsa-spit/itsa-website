@@ -24,14 +24,11 @@ $('#sidebar').bind('cssClassChanged',function() {
     ('#sidebar').affix('checkPosition');
 });
 
-// /*To prevent overlapping of header texts*/
-// $('#nav').on('affix.bs.affix',function() {
-//     $('#main-content').css('margin-top',$('#nav').height());
-// });
-//
-// $('#nav').on('affixed-top.bs.affix',function() {
-//     $('#main-content').css('margin-top',0);
-// });
+/* smooth scrolling for scroll to text1 on index.html */
+$('#icon1').click(function () {
+    $('.scroll-bottom').blur();
+    $('body,html').animate({scrollTop: $('#text1').offset().top}, 1000);
+});
 
 
 /* smooth scrolling for scroll to top */
