@@ -1,3 +1,13 @@
+/*darkNav for navbar on scroll*/
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 2) {
+        $("#nav").addClass("darkNav");
+    } else {
+        $("#nav").removeClass("darkNav");
+    }
+});
+
 /*sidebar affix*/
 $('#sidebar').affix({
     offset: {
