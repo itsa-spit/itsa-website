@@ -178,6 +178,8 @@ footer {
         position: fixed;
         top: 80px;
         width: 13%;
+        height: 80%;
+        overflow-y: auto;
         /*weird but still*/
     }
 }
