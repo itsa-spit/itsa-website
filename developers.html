@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style type="text/css">
         .imgbox {
@@ -27,20 +27,31 @@
         }
 
         .fstyle {
-            color: black;
             text-align: center;
-            font-size: 24px;
+            font-size: 20px;
         }
+		.imgcontainer {
+			width: 300px;
+			height: 300px;
+			display: inline-block;
+		}
+		img{
+			height: 200px;
+			width: 180px;
+			z-index: 10;
+			margin-left: 60px;
+			margin-top: 10px
+		}
 
-        img:hover {
-            border: solid black;
-        }
+		body{
+			color: rgb(24, 109, 195);
+		}
     </style>
 </head>
 
 <body>
     <!-- Wrap all page content here -->
-    <header class="masthead">
+    <header class="masthead back">
         <div id="page-title">
             <h1>&nbsp;Developers&nbsp;</h1>
         </div>
@@ -81,63 +92,57 @@
     <!-- Begin Body -->
     <div class="container" id="content">
         <div class="row">
-            <div class="col-sm-2 hidden-xs">
-                <ul id="sidebar" class="nav nav-pills nav-stacked">
-                    <li><a href="#developers">Developers</a></li>
-                    <li><a href="#initiators">Initiators</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-10" id="main-content">
-                <h1 id="developers" style="text-align: center;">Developers</h1>
-                <div class="imgbox1">
-                    <div style="width: 300px; height: 300px;display: inline-block;">
-                        <img src="nisit.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+            <div class="col-sm-12" id="main-content">
+                <div class="imgbox1 well">
+					<h1 id="developers" style="text-align: center;"><b>Developers</b></h1>
+                    <div class = "imgcontainer">
+                        <img src="img/developers/nisheet.jpg">
                         <p class="fstyle">Nisheet Sinvhal<br>
                             <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
                             <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                     </div>
-                    <div style="width: 300px; height: 300px;display: inline-block;float: right;">
-                        <img src="ashish.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                    <div class = "imgcontainer" style="float: right;">
+                        <img src="img/developers/aashish.jpg">
                         <p class="fstyle">Ashish Nehete<br>
                             <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
                             <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                     </div>
                     <br>
-                    <div style="width: 300px; height: 300px;display: inline-block;">
-                        <img src="simran.png" style="height: 220px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                    <div class = "imgcontainer">
+                        <img src="img/developers/simran.jpg">
                         <p class="fstyle">Simran Mhatre<br>
                             <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
                             <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                     </div>
-                    <div style="width: 300px; height: 300px;display: inline-block;float: right;">
-                        <img src="kevin.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
+                    <div class = "imgcontainer" style="float: right;">
+                        <img src="img/developers/kevin.jpg">
                         <p class="fstyle">Kevin Sijo<br>
                             <a href=""><span class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></span></a>
                             <a href=""><span class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></span></a></p>
                     </div>
                 </div>
-                <h1 id="initiators" style="text-align: center;">Initiators</h1>
-                <div class="imgbox">
+                <div class="imgbox well">
+					<h1 id="initiators" style="text-align: center;"><b>Initiators</b></h1>
                     <div style="width: 300px; height: 300px;margin:auto;">
-                        <img src="prem.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
-                        <p class="fstyle">Prem Raheja<br>Chairperson,ITSA 2017</p>
+                        <img src="img/committee/16-17/chair.png">
+                        <p class="fstyle">Prem Raheja<br>Chairperson, ITSA 2017</p>
                     </div>
-                    <div style="width: 300px; height: 300px;display: inline-block;">
-                        <img src="Aisha.png" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
-                        <p class="fstyle">Ayesha Kazi<br>Admin,ITSA 2017</p>
+                    <div class = "imgcontainer">
+                        <img src="img/committee/16-17/admin.png">
+                        <p class="fstyle">Ayesha Kazi<br>Admin, ITSA 2017</p>
                     </div>
-                    <div style="width: 300px; height: 300px;display: inline-block;float: right;">
-                        <img src="Abhishek.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
-                        <p class="fstyle">Abhishek Naik<br>Finance Head,ITSA 2017</p>
+                    <div class = "imgcontainer" style="float: right;">
+                        <img src="img/committee/16-17/finance.png">
+                        <p class="fstyle">Abhishek Naik<br>Finance Head, ITSA 2017</p>
                     </div>
                     <br>
-                    <div style="width: 300px; height: 300px;display: inline-block;">
-                        <img src="jaspreet.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
-                        <p class="fstyle">Jaspreet KAUR<br>Technical Head,ITSA 2017</p>
+                    <div class = "imgcontainer">
+                        <img src="img/committee/16-17/technical.png">
+                        <p class="fstyle">Jaspreet Kaur Bhamra<br>Technical Head, ITSA 2017</p>
                     </div>
-                    <div style="width: 300px; height: 300px;display: inline-block;float: right;">
-                        <img src="neeti.jpg" style="height: 200px; width:210px;z-index:10;margin-left: 45px; margin-top: 10px">
-                        <p class="fstyle">Neeti<br>Creative Head,ITSA 2017</p>
+                    <div class = "imgcontainer" style="float: right;">
+                        <img src="img/committee/16-17/creative.png">
+                        <p class="fstyle">Neeti Prabhupatkar<br>Creative Head, ITSA 2017</p>
                     </div>
                 </div>
             </div>

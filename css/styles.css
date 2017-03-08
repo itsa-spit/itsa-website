@@ -1,17 +1,32 @@
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Lato', serif;
 }
 
 .masthead {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/laptop.jpg");
     background-size: cover;
     color: white;
 }
 
+.index{
+	background-image: url("../img/laptop.jpg");
+	background-position: center center;
+}
+
+.back{
+	background-image: url("../img/back.jpg");
+}
+#main-content{
+	border-left: 3px solid rgb(47, 148, 249);
+}
 header {
     height: 280px;
 }
-
+hr
+{
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px rgb(47, 148, 249) inset;
+}
 .navbar {
     background-color: transparent;
     transition: background-color 1s ease;
@@ -25,7 +40,7 @@ header {
 }
 
 .darkNav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     transition: background-color 1s ease;
 }
 
@@ -36,7 +51,7 @@ header {
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     opacity: 1;
-    color: #06829B;
+    color: rgb(47, 148, 249);
 }
 
 .leftNavbar {
@@ -135,9 +150,10 @@ header {
 }
 
 footer {
-    height: 60px;
+    height: 90px;
     background-color: #f5f5f5;
     margin-top: 50px;
+	padding: 10px;
 }
 
 .scroll-top {
@@ -178,10 +194,13 @@ footer {
         position: fixed;
         top: 80px;
         width: 13%;
-        height: 80%;
-        overflow-y: auto;
+		height: 85%;
+		overflow-y: scroll;
         /*weird but still*/
     }
+	#sidebar{
+		font-size: 17px;
+	}
 }
 
 @media (max-width: 1001px) {
@@ -241,4 +260,9 @@ footer {
         padding-right: 0;
     }
 
+}
+
+.spacer{
+	width: 100%;
+	margin-top:200px;
 }
