@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #hvcenter{
+            text-align: center;
+            vertical-align: middle;
+        }
+        h2,h3{
+            text-align: center;
+        }
+        h2{
+            font-style: italic;
+        }
+        .table-hover > tbody > tr:hover , .list-group > .list-group-item:hover{
+            background-color: rgb(47, 148, 249);
+            color:white;
+        }
+        #sidebar.affix {
+            height: 30%;
+        }
+    </style>
 </head>
 
 <body>
@@ -56,53 +75,169 @@
     <!-- Begin Body -->
     <div class="container" id="content">
         <div class="row">
-            <div class="col-sm-2 hidden-xs">
-                <ul id="sidebar" class="nav nav-pills nav-stacked">
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Side</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-10" id="main-content">
+            <div class="col-sm-12" id="main-content">
                 <div class="container">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
-                                    </h4>
-                            </div>
-                            <div id="collapse1" class="panel-collapse collapse in">
-                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
-                                    </h4>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
-                                    </h4>
-                            </div>
-                            <div id="collapse3" class="panel-collapse collapse">
-                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</div>
-                            </div>
-                        </div>
-                    </div>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th id="hvcenter">Names</th>
+                            <th id="hvcenter">Mentors</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td id="hvcenter">Yogesh Bharambe<br>
+                                Nikita More<br>
+                                Manisha Mulchandani</td>
+                            <td id="hvcenter">Dr. Radha Shankarmani</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Apoorva Kuckian<br>
+                                Kruti Mody<br>
+                                Rishal Shah</td>
+                            <td id="hvcenter">Dr. Radha Shankarmani</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Shaquib Khan<br>
+                                Siddhart Shekhar<br>
+                                Vikesh Tiwari</td>
+                            <td id="hvcenter">Dr. Radha Shankarmani</td>
+                        </tr>
+
+                        <tr>
+                            <td id="hvcenter">Divya Pawar<br>
+                                Ruchi Pawar<br>
+                                Nikhita Ramakrishnan</td>
+                            <td id="hvcenter">Dr. Radha Shankarmani</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Parth Karkhanis<br>
+                                Satish Kathiriya<br>
+                                Akshay Kirane</td>
+                            <td id="hvcenter">Prof. KK Devadkar</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Rajiv Sukhwani<br>
+                                Priyam Shah<br>
+                                Malhar Thombare</td>
+                            <td id="hvcenter">Prof. KK Devadkar</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Samarth Kanabar<br>
+                                Pooja Supe<br>
+                                Samiksha Khobragade</td>
+                            <td id="hvcenter">Prof. KK Devadkar</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Chaitya Mehta<br>
+                                Aniket Khaire<br>
+                                Yash Jain</td>
+                            <td id="hvcenter">Prof. KK Devadkar</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Jigar Gala<br>
+                                Ferina Patel<br>
+                                Chaitanya Purandare</td>
+                            <td id="hvcenter">Prof. Rupali Sawant</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Kripesh Jain<br>
+                                Janak Kawa<br>
+                                Udya Verma</td>
+                            <td id="hvcenter">Prof. Rupali Sawant</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Abhijit Zimare<br>
+                                Venkat Pakkarakari<br>
+                                Prasad Pawar</td>
+                            <td id="hvcenter">Prof. Rupali Sawant</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Sayali Parab<br>
+                                Nikita Kulkarni<br></td>
+                            <td id="hvcenter">Prof. Rupali Sawant</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Birwa Galiya<br>
+                                Anish Bhobe<br>
+                                Saloni Pooriya</td>
+                            <td id="hvcenter">Prof. Sheetal Chaudhari</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Gurleen Lamba<br>
+                                Maithili Sawant<br>
+                                Mahendra Parmar</td>
+                            <td id="hvcenter">Prof. Sheetal Chaudhari</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Pranita Kadge<br>
+                                Harshada Kale<br>
+                                Akshata Bombadi</td>
+                            <td id="hvcenter">Prof. Sheetal Chaudhari</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Sanket Bhelekar<br>
+                                Gargee Mehta<br>
+                                Mrdvika Iyer</td>
+                            <td id="hvcenter">Prof. Sheetal Chaudhari</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Tarukh Kaul<br>
+                                Mukesh Nandurkar<br>
+                                Amitoj Sethi</td>
+                            <td id="hvcenter">Prof. Renuka Pawar</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Vikram Kothari<br>
+                                Manali Raut<br>
+                                Sairaj Samant</td>
+                            <td id="hvcenter">Prof. Renuka Pawar</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Niharika Acharya<br>
+                                Krutantak Patil<br>
+                                Akshit Sood</td>
+                            <td id="hvcenter">Prof. Renuka Pawar</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Pratik Mahajan<br>
+                                Bhoomika Ekbote<br>
+                                Vaishnavi Hire</td>
+                            <td id="hvcenter">Prof. Jignesh Sisodia</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Harshala Chavan<br>
+                                Siddhita Nikam</td>
+                            <td id="hvcenter">Prof. Jignesh Sisodia</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Kshitij Nagvekar<br>
+                                Nishant Naik<br>
+                                Rashi Vaijani</td>
+                            <td id="hvcenter">Prof. Jignesh Sisodia</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Rishikesh Patil<br>
+                                Ankit Sagvekar<br>
+                                Pratik Solim</td>
+                            <td id="hvcenter">Prof. Swapnali Kurhade</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Pratik Gotame<br>
+                                Rohan Arote<br>
+                                Aditya Shingade</td>
+                            <td id="hvcenter">Prof. Swapnali Kurhade</td>
+                        </tr>
+                        <tr>
+                            <td id="hvcenter">Mayuresh Londhe<br>
+                                Dhaval Patel<br>
+                                Madhur Jitwani</td>
+                            <td id="hvcenter">Prof. Swapnali Kurhade</td>
+                        </tr>
                 </div>
             </div>
+            </tbody>
+            </table>
         </div>
     </div>
     <footer>
