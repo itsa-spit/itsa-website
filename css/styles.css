@@ -137,6 +137,10 @@ hr
     }
 }
 
+#pull:hover{
+	color: rgb(47, 148, 249):
+}
+
 #content {
     margin-top: 25px;
     min-height: 300px;
