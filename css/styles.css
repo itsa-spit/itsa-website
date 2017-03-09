@@ -74,7 +74,7 @@ hr
     position: fixed;
     top: 15px;
     left: 48%;
-    z-index: 100000;
+    z-index: 10000;
     animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
     /* Firefox */
