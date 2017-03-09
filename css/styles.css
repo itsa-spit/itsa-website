@@ -137,10 +137,6 @@ hr
     }
 }
 
-#pull:hover{
-	color: rgb(47, 148, 249):
-}
-
 #content {
     margin-top: 25px;
     min-height: 300px;
@@ -180,7 +176,7 @@ footer {
     bottom: 0;
     right: 6%;
     z-index: 100;
-    background: #b8c2b8;
+    background: #b8bbc2;
     font-size: 24px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -190,9 +186,17 @@ footer {
     color: #222;
 }
 
+.nav>li>a:hover{
+    background-color: rgb(47, 148, 249);
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
 .scroll-top a:focus {
     outline: none;
 }
+
 
 @media (min-width: 768px) {
     .navbar .navbar-nav {
