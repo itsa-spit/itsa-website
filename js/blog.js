@@ -4,7 +4,9 @@ $.ajax({
     url: 'blog/posts.json',
     success: function (data) {
         postsData = data;
-        getPostCard(data[0], 0);
+        $.each(data,function(index){
+            getPostCard(data[index],index);
+        });
     },
     error: function (a,b,c) {
         console.log(a,b,c);
