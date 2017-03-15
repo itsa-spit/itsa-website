@@ -4,12 +4,12 @@ $.ajax({
     url: 'blog/posts.json',
     success: function (data) {
         postsData = data;
-        $.each(data,function(index){
-            getPostCard(data[index],index);
+        $.each(data, function (index) {
+            getPostCard(data[index], index);
         });
     },
-    error: function (a,b,c) {
-        console.log(a,b,c);
+    error: function (a, b, c) {
+        console.log(a, b, c);
     },
     dataType: 'json'
 });
@@ -34,7 +34,9 @@ function openPost(postSpan) {
 function getPostCard(post, id) {
     var html = '<div class="card"><h3>' + post.title + '</h3><hr><p>' + post.desc + '</p>' +
         '<span class="btn-link" onclick="openPost(this)" post-id="' + id +
-        '">See more...</span>' + '</div>';
+        '">See more...</span>' +
+        '<div class="author">Author: ' + post.author + '</div>' +
+        '</div>';
     $("#content").append(html);
 }
 
