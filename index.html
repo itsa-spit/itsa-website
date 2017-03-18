@@ -9,11 +9,14 @@
 
     <link rel="shortcut icon" href="itsa-favicon.ico">
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bower_components/Ripple.js/dist/ripple.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <style>
         .masthead {
             height: 100vh;
@@ -112,67 +115,51 @@
 </head>
 
 <body>
+<nav>
     <!-- Wrap all page content here -->
-    <header class="masthead index">
-        <div id="title">
-            <span>Information Technology Student Association</span>
-            <div id="space"></div>
-            <div id="div1">
-                <p>
-                    <a href="#text1" id="icon1" style="color: white; top:80%;">
-                        <span class="glyphicon glyphicon-menu-down"></span>
-                    </a>
-                </p>
-            </div>
-        </div>
-    </header>
-    <!-- Begin Navbar -->
-    <nav id="nav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav" id="navbarLeft">
-                    <li><a href="./core.html">Committee</a></li>
-                    <li><a href="./workshop.html">Workshop</a></li>
-                    <li><a href="./achievements.html">Achievements</a></li>
-                </ul>
-                <ul class="nav navbar-nav" id="navbarRight">
-                    <li><a href="./faculty.html">Faculty</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./developers.html">Developers</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.navbar -->
-    </nav>
-    <a href="index.html">
-        <div id="ITSA"></div>
-    </a>
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+        <a class="navmenu-brand" href=""><img src="./img/itsa-logo-plain.png" height="100px" width="auto"
+                                              alt="Information Technology Students Association"></a>
+        <ul class="nav navmenu-nav">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="core.html">Committee</a></li>
+            <li><a href="workshop.html">Workshop</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="developers.html">Developers</a></li>
+        </ul>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+    </div>
+</nav>
+
     <!-- Begin Body -->
+<main>
     <div class="container" id="content">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <p class="text-justify" id="text1">
-                    The Information Technology Students Association first came into being in 2004 as a group of students coming together to represent the interest of the IT department and enrich their 4 years in engineering. The association has evolved over the years with
-                    numerous ideas being incorporated every year, setting milestones for the following batches to come. Now in 2016-2017 a group of 5 individuals with common interest for their department, has taken up the responsibilities of making a difference
+                    The Information Technology Students Association first came into being in 2004 as a group of students
+                    coming together to represent the interest of the IT department and enrich their 4 years in
+                    engineering. The association has evolved over the years with
+                    numerous ideas being incorporated every year, setting milestones for the following batches to come.
+                    Now in 2016-2017 a group of 5 individuals with common interest for their department, has taken up
+                    the responsibilities of making a difference
                     to the department that has become a part of their lives.
                 </p>
             </div>
-            <div class="col-md-4">
-                <img src="img/itsa-logo-plain.png" width="100%">
             </div>
         </div>
-    </div>
+</main>
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -197,25 +184,14 @@
     <ul class="nav pull-right scroll-top hidden-xs">
         <li><a href="#" tabindex="-1" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
     </ul>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/indexjs.js"></script>
-    <script>
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            if (scroll >= 50) {
-                $("#nav").addClass("darkNav");
-                $('#navbarLeft').addClass('leftNavbar');
-                $('#navbarRight').addClass('rightNavbar');
-                $('#ITSA').addClass('itsa-logo');
-            } else {
-                $("#nav").removeClass("darkNav");
-                $('#navbarLeft').removeClass('leftNavbar');
-                $('#navbarRight').removeClass('rightNavbar');
-                $('#ITSA').removeClass('itsa-logo');
-            }
-        });
-    </script>
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+<script src="./bower_components/Ripple.js/dist/ripple.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+<script src="./js/indexjs.js"></script>
 </body>
 
 </html>
