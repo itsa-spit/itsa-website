@@ -126,11 +126,6 @@ hr
     border: none;
 }
 
-.darkNav {
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: background-color 1s ease;
-}
-
 .navbar-default .navbar-nav>li>a {
     opacity: 1;
     color: #fff;
@@ -139,36 +134,6 @@ hr
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     opacity: 1;
     color: rgb(47, 148, 249);
-}
-
-.leftNavbar {
-    padding-right: 50px;
-    transition: padding-right 0.5s linear;
-}
-
-.rightNavbar {
-    padding-left: 50px;
-    transition: padding-left 0.5s linear;
-}
-
-.itsa-logo {
-    background-image: url('../img/itsa-logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    margin-left: -2%;
-    position: fixed;
-    top: 15px;
-    left: 47.5%;
-    z-index: 1050;
-    animation: fadeIn 1s;
-    -moz-animation: fadeIn 1s;
-    /* Firefox */
-    -webkit-animation: fadeIn 1s;
-    /* Safari and Chrome */
-    -o-animation: fadeIn 1s;
-    /* Opera */
 }
 
 @keyframes fadeIn {
