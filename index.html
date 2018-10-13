@@ -15,25 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .masthead {
-            height: 100vh;
-        }
-
-        #title {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            width: 100%;
-            color: white;
-            font-size: 3em;
-        }
-
         #content {
             margin-top: 30px;
-            font-size: 16px;
+            font-size: 20px;
         }
 
         #icon1 {
@@ -101,10 +85,6 @@
             }
         }
 
-        #space {
-            height: 150px;
-        }
-
         footer {
             margin-top: 0;
         }
@@ -114,24 +94,15 @@
 <body>
     <!-- Wrap all page content here -->
     <header class="masthead index">
-        <div id="title">
-            <span>Information Technology Student Association</span>
-            <div id="space"></div>
-            <div id="div1">
-                <p>
-                    <a href="#text1" id="icon1" style="color: white; top:80%;">
-                        <span class="glyphicon glyphicon-menu-down"></span>
-                    </a>
-                </p>
-            </div>
-        </div>
+
     </header>
     <!-- Begin Navbar -->
     <nav id="nav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -160,11 +131,10 @@
     <div class="container" id="content">
         <div class="row">
             <div class="col-md-8">
-                <p class="text-justify" id="text1">
-                    The Information Technology Students Association first came into being in 2004 as a group of students coming together to represent the interest of the IT department and enrich their 4 years in engineering. The association has evolved over the years with
-                    numerous ideas being incorporated every year, setting milestones for the following batches to come. Now in 2016-2017 a group of 5 individuals with common interest for their department, has taken up the responsibilities of making a difference
-                    to the department that has become a part of their lives.
-                </p>
+                <h1>Information Technology Student Association</h1>
+                <h3><em>For the students of IT. By the students of IT. Of the students of IT.</em></h3>
+                <p>We are a group of 5 students who try to bring the department together. We have fun and we also learn
+                    together. So come join us on this journey of life called <strong><em>ENGINEERING!!!</em></strong></p>
             </div>
             <div class="col-md-4">
                 <img src="img/itsa-logo-plain.png" width="100%">
@@ -175,17 +145,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <p class="text-muted">Copyright &copy; <span id="currentYear"></span> ITSA, Sardar Patel Institute of Technology</p>
+                    <p class="text-muted">Copyright &copy; <span id="currentYear"></span> ITSA, Sardar Patel Institute
+                        of Technology</p>
                 </div>
                 <div class="col-xs-12">
                     <div><span class="text-muted">Follow us at:</span>
-                        <a href="https://www.facebook.com/groups/591598247557131/" target="_blank"><span class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></span></a>
+                        <a href="https://www.facebook.com/groups/591598247557131/" target="_blank"><span class="btn btn-social-icon btn-facebook"><i
+                                    class="fa fa-facebook"></i></span></a>
                     </div>
                 </div>
-                <div class="hidden">
+                <div class="">
                     <!-- Start of SimpleHitCounter Code -->
                     <div align="right">
-                        <img src="http://simplehitcounter.com/hit.php?uid=2245548&f=255&b=16777215" border="0" height="18" width="83" alt="web counter">
+                        <img src="http://simplehitcounter.com/hit.php?uid=2245548&f=255&b=16777215" border="0" height="18"
+                            width="83" alt="web counter">
                     </div>
                     <!-- End of SimpleHitCounter Code -->
                 </div>
@@ -199,7 +172,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/indexjs.js"></script>
     <script>
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll >= 50) {
                 $("#nav").addClass("darkNav");
